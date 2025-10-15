@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 70%;
+  height: 60%;
+}
+.left {
+  background-color: hsl(244, 37%, 16%);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.left span {
+  color: hsl(277, 64%, 61%);
+}
+.left p {
+  font-size: 17px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 20px 5px;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(238, 241, 240);
+  position: relative;
+  overflow: hidden;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.right::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.6;
+  z-index: 2;
+  pointer-events: none;
+}
+.buttom {
+  display: flex;
+  justify-content: left;
+  align-content: flex-start;
+  margin: 38PX 0 0 0;
+  padding: 0;
+    gap: 45PX;
+  
+}
+.button.BIG{
+  color:  hsla(0, 0%, 100%, 0.6);
+}
+.P{color:  hsla(0, 0%, 100%, 0.75);padding: 10PX 0;}
+.BIG{font-size: 1.2rem;font-weight: bold;font-family:"inter", sans-serif;}
